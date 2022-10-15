@@ -1,0 +1,223 @@
+/* Body */
+body {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h2 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 6px;
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    40deg,
+    #ff8a8a 20%,
+    #f771d1 40%,
+    #a18aff 60%,
+    #4cd2ff 80%,
+    #6afc82 100%
+  );
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    40deg,
+    #ff5757 20%,
+    #ff61d0 40%,
+    #9278fa 60%,
+    #24c5ff 80%,
+    #43f761 100%
+  );
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 0px;
+  box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+}
+/* Scroll bar smooth */
+html {
+  scroll-behavior: smooth;
+}
+/* Header */
+.navbar-global {
+  background-color: rgb(255, 255, 255);
+}
+.navbar-global .navbar-title {
+  color: rgb(0, 0, 0);
+  font-family: "Oswald", sans-serif;
+  font-family: "Reenie Beanie", cursive;
+  font-size: 50px;
+  margin-left: 20px;
+}
+a,
+a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+/* Bienvenue */
+.slogan {
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 17px;
+  margin-left: 50px;
+}
+/* Création de compte */
+.create {
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 17px;
+  margin-left: 75px;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background: linear-gradient(45deg, #1cd860, #8f29dd);
+  background-size: 600% 100%;
+  animation: gradient 5s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+/* Bonne découverte */
+.discover {
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 17px;
+  margin-left: 75px;
+}
+.avisverifies {
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 17px;
+  margin-left: 125px;
+}
+/* Follow */
+.follow {
+  font-family: "Reem Kufi", sans-serif;
+  text-align: center;
+  margin: 15px;
+  color: black;
+}
+.fa {
+  padding: 7px;
+  font-size: 14px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.fa-instagram:hover {
+  background: #125688;
+  color: white;
+}
+.fa-pinterest:hover {
+  background: #cb2027;
+  color: white;
+}
+/* Contenu */
+.main-content {
+  margin-top: 60px;
+  margin-left: 180px;
+  margin-bottom: 200px;
+}
+
+.collapsed + .main-content {
+  margin-left: 60px;
+}
+/* Tableau */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 14px;
+}
+
+tr {
+  background-color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+p,
+time,
+.btn {
+  font-family: "Reem Kufi", sans-serif;
+}
+
+.timeMessage {
+  color: rgb(32, 84, 228);
+}
+
+p {
+  color: white;
+}
+
+.explication {
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(54, 62, 73);
+}
+
+.area {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.message {
+  border: 1px solid white;
+  background-color: rgb(54, 62, 73);
+  padding: 10px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btnCenter {
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+/* Dessins espace commentaire */
+.dessin {
+  width: 225px;
+  height: 300px;
+  border: 5px solid black;
+  display: block;
+  margin: 0 auto;
+}

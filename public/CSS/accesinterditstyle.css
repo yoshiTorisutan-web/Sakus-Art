@@ -1,0 +1,59 @@
+/* Accès interdit si non compte admin de connecté */
+form i {
+    margin-left: -30px;
+    cursor: pointer;
+  }
+  .admin {
+    position: absolute;
+    top: 15%;
+    left: 37%;
+    background-color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border: 1px solid black;
+  }
+  .title {
+    color: rgb(0, 0, 0);
+    font-family: "Oswald", sans-serif;
+    font-family: "Reenie Beanie", cursive;
+    font-size: 35px;
+  }
+  .titlebis1 {
+    color: rgb(255, 0, 0);
+    font-family: "Reem Kufi", sans-serif;
+    font-size: 20px;
+  }
+  .titlebis2 {
+    color: rgb(0, 0, 0);
+    font-family: "Reem Kufi", sans-serif;
+    font-size: 15px;
+    background-color: #ff05056b;
+  }
+  /* Bouton renvoyant à l'accueil */
+  .accueil {
+    font-family: "Reem Kufi", sans-serif;
+    background-color: black;
+    color: white;
+    padding-left: 55px;
+    padding-right: 55px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+  }
+  a,
+  a:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .logo {
+    width: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  

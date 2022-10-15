@@ -1,0 +1,226 @@
+/* Arrière plan */
+body
+{
+  background-image: url(../Medias/Fond-ecran-creation.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* Scroll Bar */
+::-webkit-scrollbar{
+  width: 6px;
+  display: none;
+  }
+  ::-webkit-scrollbar-thumb{
+  background: linear-gradient(40deg, #FF8A8A 20%,#F771D1 40%,#A18AFF 60%,#4CD2FF 80%,#6AFC82 100%);
+  border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(40deg, #FF5757 20%,#FF61D0 40%,#9278FA 60%,#24C5FF 80%,#43F761 100%);
+  }
+  ::-webkit-scrollbar-track{
+  background: #FFFFFF;
+  border-radius: 0px;
+  box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+  }
+  /* Scroll bar smooth */
+  html
+  {
+    scroll-behavior: smooth;
+  }
+/* Header */
+.navbar-global {
+  background-color: rgb(255, 255, 255);
+}
+.navbar-global .navbar-title {
+  color: rgb(0, 0, 0);
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 50px;
+  margin-left: 20px;
+}
+a, a:hover
+{
+  color: #000000;
+  text-decoration: none;
+}
+/* Bienvenue */
+.slogan
+{
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 17px;
+  margin-left: 50px;
+}
+/* Création de compte */
+.create
+{
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 17px;
+  margin-left: 75px;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background: linear-gradient(45deg,#1CD860, #8F29DD);
+    background-size: 600% 100%;
+    animation: gradient 5s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+/* Bonne découverte */
+.discover
+{
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 17px;
+  margin-left: 75px;
+}
+.avisverifies
+{
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 17px;
+  margin-left: 125px;
+}
+/* Follow */
+.follow
+{
+  font-family: 'Reem Kufi', sans-serif;
+  text-align: center;
+  margin: 15px ;
+  color: black;
+}
+.fa {
+  padding: 7px;
+  font-size: 14px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.fa-instagram:hover {
+  background: #125688;
+  color: white;
+}
+.fa-pinterest:hover
+{
+  background: #cb2027;
+  color: white;
+}
+/* Contenu */
+.main-content {
+  margin-top: 60px;
+  margin-left: 180px;
+  margin-bottom: 200px;
+}
+
+.collapsed + .main-content {
+  margin-left: 60px;
+}
+/* Espace connexion */
+form i {
+  margin-left: -30px;
+  cursor: pointer;
+}
+.aide
+{
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  background-color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.title
+{
+  color: rgb(0, 0, 0);
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 30px;
+}
+.titlebis
+{
+  color: black;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 12px;
+}
+/* Formulaire */
+.champ
+{
+  margin-bottom: 15px;
+  text-align: center;
+}
+.pseudo, .prenom, .nom
+{
+  font-family: 'Reem Kufi', sans-serif;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+}
+.motdepasse
+{
+  font-family: 'Reem Kufi', sans-serif;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-left: 10px;
+  margin-left: -12px;
+}
+.mail
+{
+  font-family: 'Reem Kufi', sans-serif;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-left: 10px;
+}
+::placeholder
+{
+  color: black;
+}
+.send {
+  font-family: 'Reem Kufi', sans-serif;
+  background-color: black;
+  color: white;
+  padding-left: 55px;
+  padding-right: 55px;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.forget, .account
+{
+  color: rgb(0, 0, 0);
+}
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+/* Info Bulle */
+.infobulle{
+  display:block;
+  margin-left: 100px;
+  
+}
+
+/* Input required */
+input:required {
+  box-shadow: none;
+}

@@ -1,0 +1,710 @@
+html{
+  height:100%
+}
+/* Arrière plan */
+body
+{
+  background-image: url(../Medias/crayon-background.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-bottom: 100px;
+  -moz-box-sizing: border-box; box-sizing: border-box;
+  z-index: -4;
+}
+/* Scroll Bar */
+::-webkit-scrollbar{
+  width: 6px;
+  display: none;
+  }
+  ::-webkit-scrollbar-thumb{
+  background: linear-gradient(40deg, #FF8A8A 20%,#F771D1 40%,#A18AFF 60%,#4CD2FF 80%,#6AFC82 100%);
+  border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(40deg, #FF5757 20%,#FF61D0 40%,#9278FA 60%,#24C5FF 80%,#43F761 100%);
+  }
+  ::-webkit-scrollbar-track{
+  background: #FFFFFF;
+  border-radius: 0px;
+  box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+  }
+  /* Scroll bar smooth */
+  html
+  {
+    scroll-behavior: smooth;
+  }
+/* Header */
+.navbar-global {
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  z-index: -1;
+}
+.navbar-global .navbar-title {
+  color: rgb(0, 0, 0);
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 50px;
+  margin-left: 20px;
+}
+a, a:hover
+{
+  color: #000000;
+  text-decoration: none;
+}
+/* Bienvenue */
+.welcome
+{
+  font-family: 'Reem Kufi', cursive;
+  font-size: 17px;
+  margin-left: 50px;
+  background-color: lightgreen;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 150px;
+  padding-left: 150px;
+}
+.pseudoConnect{
+  font-family: 'Reem Kufi', cursive;
+  font-size: 15px;
+  margin-left: 50px;
+  background-color: lightgreen;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+/* Accueil */
+.home
+{
+  font-family: 'Reem Kufi', cursive;
+  font-size: 17px;
+  margin-left: 125px;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+  background: linear-gradient(45deg,#8c8cbb, #348ac7);
+    background-size: 600% 100%;
+    animation: gradient 5s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+/* Aide et coordonnées */
+.help
+{
+  font-family: 'Reem Kufi', cursive;
+  text-align: center;
+  margin: 20px ;
+  color: black;
+}
+.helpClick, .helpClick:hover
+{
+  color: black;
+  text-decoration: none;
+}
+.help-icon
+{
+  padding-top: 30px;
+}
+
+.glyphicon-question-sign
+{
+  font-size: 20px;
+}
+/* Menu */
+.navbar-global .navbar-user > li > a
+{
+  color: rgb(0, 0, 0);
+}
+
+.navbar-primary {
+  font-family: 'Reem Kufi', cursive;
+  background-color: rgb(255, 255, 255);
+  bottom: 0px;
+  left: 0px;
+  position: fixed;
+  top: 81px;
+  width: 180px;
+  overflow: hidden;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  border-width: 0px 1px 1px 0px;
+  border-style: dashed solid solid solid;
+  border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(0, 0, 0) rgb(0, 0, 0);
+  font-size: 12px;
+}
+/* Barre verticale */
+.verticalBarre
+{
+  border-left: 2px solid black;
+  height: 60px;
+  display: inline-block;
+  margin-top: 10px;
+  padding-right: 30px;
+}
+/* Logo */
+.logo
+{
+    width: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+/* Menu */
+.navbar-primary.collapsed {
+  width: 60px;
+}
+
+.navbar-primary.collapsed .glyphicon {
+  font-size: 22px;
+}
+
+.navbar-primary.collapsed .nav-label {
+  display: none;
+}
+
+.btn-expand-collapse {
+    position: absolute;
+    display: block;
+    left: 0px;
+    bottom:0;
+    width: 100%;
+    padding: 8px 0;
+    border-top:solid 1px rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn-expand-collapse:hover,
+.btn-expand-collapse:focus {
+    background-color: rgb(255, 255, 255);
+    color: rgb(71, 129, 255);
+}
+
+.btn-expand-collapse:active {
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar-primary-menu,
+.navbar-primary-menu li {
+  margin:0; padding:0;
+  list-style: none;
+}
+
+.navbar-primary-menu li a {
+  display: block;
+  padding: 25px 18px;
+  text-align: left;
+  border-bottom:solid 1px rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.navbar-primary-menu li a:hover {
+  background-color: #000;
+  text-decoration: none;
+  color: white;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.navbar-primary-menu li a .glyphicon {
+  margin-right: 6px;
+}
+
+.navbar-primary-menu li a:hover .glyphicon {
+  color: rgb(71, 129, 255);
+}
+/* Bannière ours */
+.bear
+{
+  width: 100%;
+  height: 400px;
+  position: relative;
+  z-index: -4;
+}
+/* Texte sur la bannière */
+.textIntro
+{
+  font-family: 'Reem Kufi', cursive;
+  position: absolute;
+  z-index: -4;
+  top: 10%;
+  left: 6%;
+  background-color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+/* Signature de l'artiste */
+.signature
+{
+  font-family: 'Reem Kufi', cursive;
+  color: white;
+  position: absolute;
+  z-index: -4;
+  top: 36%;
+  right: 1%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+/* Contenu */
+.main-content {
+  margin-top: 60px;
+  margin-left: 180px;
+  margin-bottom: 75px;
+  position: relative;
+  z-index: -3;
+}
+
+.collapsed + .main-content {
+  margin-left: 60px;
+}
+/* Portrait de l'artiste */
+.portrait
+{
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 250px;
+  height: 300px;
+  border: 5px solid black;
+  position: absolute;
+  z-index: -4;
+}
+/* Biographie */
+.biographie
+{
+  font-family: 'Reem Kufi', cursive;
+  background-color: white;
+  margin-top: 50px;
+  margin-left: 425px;
+  position: absolute;
+  z-index: -4;
+  text-align: center;
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+/* Plaque artiste */
+.sousTitre
+{
+  font-family: 'Reem Kufi', cursive;
+  margin-top: 375px;
+  position: absolute;
+  z-index: -4;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 130px;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+/* Bouton Mini-jeu */
+.game{
+  font-family: 'Reem Kufi', cursive;
+  margin-top: 40%;
+  margin-left: 165px;
+  text-align: center;
+  color: white;
+  background: #780206;
+  background: linear-gradient(to right, #061161, #780206);
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-right: 35px;
+  padding-left: 35px;
+  z-index: -4;
+  position: relative;
+}
+.mini-jeu, .mini-jeu:hover{
+  color:white;
+}
+/* Citation Art */
+.citation
+{
+  font-family: 'Reem Kufi', cursive;
+  background-color: white;
+  margin-top: 390px;
+  margin-left: 500px;
+  position: absolute;
+  z-index: -4;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+/* Bas de page */
+footer{
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 5em;
+  position: absolute;
+  z-index: -4;
+}
+.backgroundFooter
+{
+  background-color: rgb(0, 0, 0);
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  border-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 500px;
+  position: relative;
+  z-index: -4;
+}
+.copyright, .conditions, .mentionsLégales, .version, .cookies, .donnéesPerso
+{
+  font-family: 'Reem Kufi', cursive;
+  margin: 20px;
+  color: white;
+}
+/* Connexion + Déconnexion*/
+form i {
+  margin-left: -30px;
+  cursor: pointer;
+}
+.popup-container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+}
+.popup-container .buttonC {
+  height: 40px;
+  line-height: 40px;
+  background: #000000;
+  padding: 0 40px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+.buttonD {
+  height: 40px;
+  line-height: 40px;
+  background: #000000;
+  padding: 0 40px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+.textbuttonD{
+  color: white
+}
+.buttonC:hover
+{
+  background: #39fad7;
+  background: linear-gradient(to right, #44ea76, #39fad7);
+  color: white;
+}
+.buttonD:hover
+{
+  background: #e52d27;
+  background: linear-gradient(to right, #b31217, #e52d27);
+  color: rgb(255, 255, 255);
+}
+.popup-container .popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.884);
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: 400ms all;
+}
+.popup-container .popup > label {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.popup-container .popup .inner {
+  position: absolute;
+  z-index: 10;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(255, 255, 255);
+  min-width: 300px;
+  box-sizing: border-box;
+  transition: 400ms all;
+  min-height: 300px;
+  overflow: auto;
+  border-radius: 10px;
+}
+.popup-container .popup .inner .title {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  position: sticky;
+  top: 0;
+  background: #fff;
+}
+.popup-container .popup .inner .title h6 {
+  font-family: 'Reem Kufi', cursive;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 82px;
+  padding-top: 20px;
+}
+.popup-container .popup .inner .title label {
+  font-size: 14px;
+  color: #999;
+  cursor: pointer;
+}
+.popup-container .popup .inner .title label:hover {
+  color: rgb(0, 0, 0);
+}
+.popup-container .popup .inner .content {
+  padding: 5px 10px 10px;
+}
+.popup-container .popup .inner .content ul li input:focus {
+  outline: 0;
+  border-color: #272643;
+}
+.popup-container .popup .inner .content ul li button {
+  width: 100%;
+  height: 30px;
+  border-radius: 25px;
+  border: none;
+  background: #272643;
+  color: #ffffff;
+  font-size: 13px;
+  cursor: pointer;
+}
+.popup-container .popup .inner .content p {
+  font-size: 13px;
+  line-height: 130%;
+  margin-bottom: 15px;
+}
+.popup-container .popup .inner .content p:last-child {
+  margin-bottom: 0;
+}
+.popup-container .popup .inner .content .close-btn {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+.popup-container .popup .inner .content .close-btn label {
+  background: rgba(0, 0, 0, 0.05);
+  display: block;
+  line-height: 30px;
+  text-align: center;
+  font-size: 13px;
+  color: #444;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.popup-container .popup .inner .content .close-btn label:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+.popup-container > input {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+.popup-container > input:checked + .popup {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-container > input:checked + .popup .inner {
+  top: 50%;
+}
+/* Popup déconnexion */
+.areYouSure{
+  font-family: "Reem Kufi", sans-serif;
+  margin-top: 20px;
+  text-align: center;
+}
+.yes{
+  font-family: "Reem Kufi", sans-serif;
+  background-color: rgb(0, 129, 6);
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 75px;
+}
+.no{
+  font-family: "Reem Kufi", sans-serif;
+  background-color: rgb(160, 1, 1);
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+.logoGoodBye{
+  width: 120px;
+  margin-top: 30px;
+  margin-left: 90px;
+}
+.aYes, .aNo, .aYes:hover, .aNo:hover {
+  text-decoration: none;
+  color: white;
+}
+/* Bouton Profil */
+.imageProfil{
+  width: 50px;
+  height: 50px;
+}
+.principal_petit
+{
+  display: block;
+  margin-left: 65px;
+  margin-right: auto;
+  margin-top: 5px;
+  width: 50px;
+  height: 50px;
+  background-color: #000000;
+  border-radius: 50px;
+  -webkit-transition:all 0.2s ease-in;
+  -moz-transition:all 0.2s ease-in;
+  -ms-transition:all 0.2s ease-in;
+  -o-transition:all 0.2s ease-in;
+  transition:all 0.2s ease-in;
+}
+.principal_petit:hover
+{
+  -webkit-transform: scale(1.1);
+  -webkit-transition:all 0.2s ease-in;
+  -moz-transform: scale(1.1);
+  -moz-transition:all 0.2s ease-in;
+  -ms-transform: scale(1.1);
+  -ms-transition:all 0.2s ease-in;
+  -o-transform: scale(1.1);
+  -o-transition:all 0.2s ease-in;
+  transform: scale(1.1);
+  transition:all 0.2s ease-in;
+}
+.principal_img
+{
+  -webkit-transition:all 0.2s ease-in;
+  -moz-transition:all 0.2s ease-in;
+  -ms-transition:all 0.2s ease-in;
+  -o-transition:all 0.2s ease-in;
+  transition:all 0.2s ease-in;
+}
+.principal_img:hover
+{
+  -webkit-transform: scale(0.7);
+  -webkit-transition:all 0.2s ease-in;
+  -moz-transform: scale(0.7);
+  -moz-transition:all 0.2s ease-in;
+  -ms-transform: scale(0.7);
+  -ms-transition:all 0.2s ease-in;
+  -o-transform: scale(0.7);
+  -o-transition:all 0.2s ease-in;
+  transform: scale(0.7);
+  transition:all 0.2s ease-in;
+}
+/* Formulaire */
+.champ
+{
+  margin-bottom: 15px;
+  text-align: center;
+}
+.pseudo
+{
+  font-family: 'Reem Kufi', cursive;
+  background-color: rgb(230, 230, 230);
+  padding-right: 60px;
+  border-radius: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+}
+.motdepasse
+{
+  font-family: 'Reem Kufi', cursive;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+  padding-bottom: 8px;
+  padding-right: 60px;
+  padding-top: 8px;
+  padding-left: 10px;
+  margin-left: -17px;
+}
+::placeholder
+{
+  color: black;
+}
+.send
+{
+  font-family: 'Reem Kufi', cursive;
+  background-color: black;
+  color: white;
+  padding-left: 55px;
+  padding-right: 55px;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.forget, .account
+{
+  color: blue;
+  text-align: center;
+}
+
+/* PARTIE FOOTER */
+.cgu{
+  background-color: white;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.aCgu, .aDonneesPerso, .aMentionsLegales, .aCookies{
+  text-decoration: none;
+  color: white;
+}
+.aCgu:hover, .aDonneesPerso:hover, .aMentionsLegales:hover, .aCookies:hover{
+  color: lightgreen
+}

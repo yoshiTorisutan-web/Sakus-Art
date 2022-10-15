@@ -1,0 +1,33 @@
+<!-- Gestion de l'ensemble de mes CSS -->
+<?php
+    $hover=[
+    "art"=>"artstyle",
+    "artgraphique"=>"artgraphiquestyle",
+    "logo"=>"logostyle",
+    "accueil"=>"style",
+    "aide"=>"aidestyle",
+    "preview"=>"previewstyle", 
+    "authentif"=>"authentifstyle", 
+    "inscription"=>"inscriptionstyle", 
+    "forum"=>"forumstyle",
+    "mdp1"=>"mdp1style",
+    "mdp2"=>"mdp2style",
+    "accueil, art, artgraphique"=>"cookie",
+    "commentairedessin"=>"commentairestyle",
+    "commentairephoto"=>"commentairestyle",
+    "avisdessin"=>"commentairestyle",
+    "avisphoto"=>"commentairestyle",
+    "envoifichier"=>"fichierstyle",
+    "admin"=>"adminstyle",
+    "game"=>"gamestyle",
+    "profilUtilisateur"=>"profilUtilisateur",
+    "cgu"=>"lienfooterstyle",
+    "mentionslegales"=>"lienfooterstyle",
+    "cookies"=>"lienfooterstyle",
+    "donneespersonnelles"=>"lienfooterstyle",
+    "accesinterdit"=>"accesinterditstyle",
+    "error404"=>"error404style",
+    "eventCalendar"=>"eventCalendarstyle",
+    "pwdForget"=>"pwdForgetstyle"
+];
+?>
