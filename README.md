@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <h1 align="center">Search_app</h1>
 <div align="center">
-  <img src="lieu.png" alt="Logo" width="80" height="80">
+  <img src="public/Medias/Bear_and_forest.png" alt="Logo" width="400" height="200">
 </div>
 
 # Présentation
