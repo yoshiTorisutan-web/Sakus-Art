@@ -1,3 +1,9 @@
+<!-- PROJECT LOGO -->
+<h1 align="center">Search_app</h1>
+<div align="center">
+  <img src="lieu.png" alt="Logo" width="80" height="80">
+</div>
+
 # Présentation
 Le site Sakus-Art, est une galerie d’art communautaire et un portfolio dont le thème est la
 création artistique et l’échange communautaire.
